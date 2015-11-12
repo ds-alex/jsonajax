@@ -1,0 +1,90 @@
+body {
+	background-color: PapayaWhip;
+	font-family: 'Roboto', sans-serif;
+}
+
+.body {
+	width: 600px;
+}
+
+#body {
+	margin-top: 15px;
+}
+
+.head {
+	 padding: 3px 15px;
+	 color: white;
+	 display: inline-block;
+	 font: 40px sans-serif;
+	 background-color: LightSalmon;
+	 z-index: 1000;
+}
+
+.content {
+	margin-top: -8px;
+	margin-left: 10px;
+	padding: 20px 0 0 0;
+	background-color: white;
+	color:black;
+}
+
+.input {
+	width: 300px;
+	height: 25px;
+	margin-left: 43px;
+	font: 20px bold Calibri;
+	border: dotted 1px red;
+}
+
+.input:focus {
+	background-color: floralwhite;
+	border: solid 1px #5F9EDF;
+}
+
+span {
+	color: #A5A2A9;
+}
+
+label {
+	font: 25px bold Roboto, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+li {
+	background-color: #fff;
+	width: 400px;
+	padding: 10px 40px;
+	color: #464637;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	display: block;
+	}
+
+img {
+	width: 90px;
+	height: 90px;
+	display: relative;
+}
+
+#add {
+	color: #fff;
+	width: 100%;
+	border: none;
+	outline: 0;
+	opacity: .5;
+	margin: 10px 0 0;
+	transition: opacity .1s ease;
+	cursor: pointer;
+	background: #5F9EDF;
+	padding: 10px 0;
+	font-size: 20px;
+	}
+#add:hover {
+	opacity: 1;
+		}
