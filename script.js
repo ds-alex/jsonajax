@@ -53,13 +53,16 @@ function makeCorsRequest(url) {
     elem.appendChild (content);
     avatar.appendChild (elem);
 };
-
 function formImg (dat, param) {
     document.getElementById ("avatar").innerHTML += '<img src="'+ dat +'" alt="' + param + '">'
 };*/
-function formBlock (dat) {
 
+function formBlock (dat) {
     var body = document.getElementById ("body");
-    body.innerHTML += "<div class='body'><div class='head'>"+dat.name+"</div><div class='content'><ul><li><img src='"+ dat.avatar_url +"' alt=''> </li><li>UserID: <span>"+dat.id+"</span></li><li>AccType: <span>"+dat.type+"</span></li></ul></div></div>";
+    if (!dat.name) {
+        dat.name = "oh no! this User has no name :(";
+    };
+    //body.innerHTML += "<div class='body'><div class='head'>"+dat.name+"</div><div class='content'><ul><li><img src='"+ dat.avatar_url +"' alt=''> </li><li>UserID: <span>"+dat.id+"</span></li><li>AccType: <span>"+dat.type+"</span></li></ul></div></div>";
+    body.insertAdjacentHTML ("afterBegin", "<div class='body'><div class='head'>"+dat.name+"</div><div class='content'><ul><li><img src='"+ dat.avatar_url +"' alt=''> </li><li>UserID: <span>"+dat.id+"</span></li><li>AccType: <span>"+dat.type+"</span></li></ul></div></div>");
 };
  
